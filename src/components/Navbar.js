@@ -10,8 +10,7 @@ class Mynav extends React.Component {
   render() {
     return (
       <div>
-        <div className="row">
-          <div className="col-md-12">
+       
             <Router>
               <Navbar variant="dark" expand="lg" sticky="top">
                 <Navbar.Brand href="#home">Paul Wamaria</Navbar.Brand>
@@ -75,8 +74,7 @@ class Mynav extends React.Component {
                 </Route>
               </Switch>
             </Router>
-          </div>
-        </div>
+       
       </div>
     );
   }
