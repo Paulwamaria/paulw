@@ -12,6 +12,7 @@ const Footer = () => {
   return (
     <MDBFooter color="blue" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
+        <h6 className="funnyFonts text-center">Projects I have worked on:</h6>
         <MDBRow>
           <MDBCol md="2">
           <div className="projsmalldiv">
