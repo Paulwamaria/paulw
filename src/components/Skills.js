@@ -28,7 +28,7 @@ export class ContactUs extends Component {
     return (
       <>
         <h3 className="funnyFonts text-center text-white mt-3 mb-3">
-          These Are My Skills
+          What I can work with:
         </h3>
         <hr />
         <div className="container-fluid">
@@ -339,13 +339,20 @@ export class ContactUs extends Component {
               </div>
             </div>
           </div>
-          <div className="text-center text-white">
-            <h3 className="funnyFonts">And here are my special skills</h3>
-            <ul>
-              <li>Team player</li>
-              <li>Learn New skills</li>
-              <li>Problem solving</li>
-            </ul>
+          <div className="container-fluid text-white">
+            <div className="row">
+              <div className="col-sm-3"></div>
+              <div className="col-sm-6">
+                <h3 className="funnyFonts mt-4
+                ">And here are my special skills</h3>
+                <ul>
+                  <li>Team player</li>
+                  <li>Ability to learn new skills</li>
+                  <li>Problem solver</li>
+                </ul>
+              </div>
+              <div className="col-sm-3"></div>
+            </div>
           </div>
         </div>
       </>
