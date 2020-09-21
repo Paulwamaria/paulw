@@ -48,3 +48,10 @@ opacity: 7;
     height: auto;
   }
 }
+.projimg{
+  width: 100%;
+  height: auto;
+}
+.pjLink:hover{
+  color:green;
+}
