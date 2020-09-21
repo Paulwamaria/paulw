@@ -1,7 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Licence from './Licence'
 import instagram from "../assets/projects/insta.png"
 import servertrackerhome from "../assets/projects/servert.png"
 import mygallery from "../assets/projects/mygallery.png"
@@ -16,23 +15,38 @@ const Footer = () => {
         <MDBRow>
           <MDBCol md="2">
           <div className="projsmalldiv">
+          <a href="https://servertracker.herokuapp.com">
           <img className="img-responsive projsmall mt-2" src={servertrackerhome} alt='project1' />
+          </a>
           </div>
           </MDBCol>
           <MDBCol md="2">
-          <img className="img-responsive projsmall mt-2" src={instagram} alt='' />
+        <a href="https://instagram-clone01.herokuapp.com/register/">
+        <img className="img-responsive projsmall mt-2" src={instagram} alt='' />
+        </a>
            </MDBCol>
            <MDBCol md="2">
-           <img className="img-responsive projsmall mt-2" src={news} alt='' />
+             <a href="https://news-201.herokuapp.com/">
+             <img className="img-responsive projsmall mt-2" src={news} alt='' />
+             </a>
+         
            </MDBCol>
            <MDBCol md="2">
-           <img className="img-responsive projsmall mt-2" src={quotes} alt='' />
+             <a href="https://paulwamaria.github.io/Quotes/">
+             <img className="img-responsive projsmall mt-2" src={quotes} alt='' />
+             </a>
+         
            </MDBCol>
            <MDBCol md="2">
-           <img className="img-responsive projsmall mt-2" src={whisperbloghomepage} alt='' />
+             <a href="https://whisperblogo1.herokuapp.com/">
+             <img className="img-responsive projsmall mt-2" src={whisperbloghomepage} alt='' />
+             </a>
+        
            </MDBCol>
            <MDBCol md="2">
-           <img className="img-responsive projsmall mt-2" src={mygallery} alt='' />
+  <a href="https://mgallery01.herokuapp.com/">
+  <img className="img-responsive projsmall mt-2" src={mygallery} alt='' />
+  </a>
            </MDBCol>
          
         </MDBRow>
