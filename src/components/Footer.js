@@ -1,6 +1,5 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import instagram from "../assets/projects/insta.png"
 import servertrackerhome from "../assets/projects/servert.png"
 import mygallery from "../assets/projects/mygallery.png"
