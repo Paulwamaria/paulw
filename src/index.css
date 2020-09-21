@@ -27,5 +27,7 @@ list-style: none;
 }
 .cardProject{
   background-color:rgba(0,0,0, 0.5);
-  color:white
+  color:white;
+  min-height:500px;
 }
+
