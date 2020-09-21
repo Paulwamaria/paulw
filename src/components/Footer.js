@@ -2,12 +2,12 @@ import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Licence from './Licence'
-import instagram from "../assets/projects/instagram_2.png"
-import servertrackerhome from "../assets/projects/Servertrackerhome_1.png"
-import mygallery from "../assets/projects/mygallery_3.png"
-import quotes from "../assets/projects/quotes_5.png"
-import news from "../assets/projects/news_4.png"
-import whisperbloghomepage from "../assets/projects/whisperbloghomepage_6.png"
+import instagram from "../assets/projects/insta.png"
+import servertrackerhome from "../assets/projects/servert.png"
+import mygallery from "../assets/projects/mygallery.png"
+import quotes from "../assets/projects/quotes.png"
+import news from "../assets/projects/news.png"
+import whisperbloghomepage from "../assets/projects/whisperb.png"
 const Footer = () => {
   return (
     <MDBFooter color="blue" className="font-small pt-4 mt-4">
