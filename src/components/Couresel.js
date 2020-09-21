@@ -171,7 +171,7 @@ const CarouselPage = () => {
                   </h5>
                   <p>
                     This is a web application that assists a supervisor to
-                    monitor the number of servers runing on their platform.
+                    monitor the number of virtual servers runing on their platform.
                   </p>
                 </div>
               </div>
