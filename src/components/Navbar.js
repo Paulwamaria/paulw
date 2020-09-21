@@ -55,6 +55,14 @@ class Mynav extends React.Component {
                         <i className="fab fa-bitbucket"></i>
                       </a>
                     </li>
+                    <li className="nav-item">
+                      <a
+                        href="mailto:paulwamaria@gmail.com"
+                        className="nav-link waves-effect waves-light"
+                      >
+                        <i class="far fa-envelope"></i>
+                      </a>
+                    </li>
                   </ul>
                 </Navbar.Collapse>
               </Navbar>
