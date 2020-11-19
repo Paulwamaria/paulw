@@ -12,7 +12,7 @@ class Mynav extends React.Component {
       <div>
        
             <Router>
-              <Navbar variant="dark" expand="lg" sticky="top">
+              <Navbar variant="dark" expand="lg" className="#9699bb">
                 <Navbar.Brand href="/">Paul Wamaria</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
