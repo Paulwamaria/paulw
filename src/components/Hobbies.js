@@ -43,9 +43,9 @@ export class Hobbies extends Component {
                 <div className="card-header">Novels</div>
                 <div className="card-body mx-auto text-center">
                   <p>
-                    Who am I without novels? Seeking growth has been my greatest
-                    mantra in life, and the best way to grow is to read. I have
-                    no favourites between fiction and non-fiction. I will read
+                    Who am I without novels? Seeking growth has been my all time
+                    life mantra, and the best way to grow is to read. I have no
+                    favourites between fiction and non-fiction. I will read
                     anything as long as its a moving story.
                   </p>
                 </div>
@@ -62,9 +62,9 @@ export class Hobbies extends Component {
                 <div className="card-body mx-auto text-center">
                   <p>
                     Imagine scratching your head the whole day, pulling out your
-                    hair, and even forgetting to call your date.
-                    You start questioning your career path until you realize
-                    "oh! I misspelled a variable name...", then the feeling changes to
+                    hair, and even forgetting to call your date. You start
+                    questioning your career path until you realize "oh! I
+                    misspelled a variable name...", then the feeling changes to
                     that of Neil Armstrong when he first landed on the moon. I
                     love those scenarios.
                   </p>
@@ -77,7 +77,8 @@ export class Hobbies extends Component {
                 <div className="card-header">Exercising</div>
                 <div className="card-body mx-auto text-center">
                   <p>
-                    Karate, Yoga, aerobics, swimming...anything that challenges my physical fitness.
+                    Yoga, aerobics, swimming...I like challenging my physical
+                    fitness.
                   </p>
                 </div>
               </div>
@@ -89,7 +90,10 @@ export class Hobbies extends Component {
                 <div className="card-body mx-auto text-center">
                   <ul>
                     <li>Travelling with no specific destination</li>
-                    <li>Movies with a sense of humor, fantasy or comedy</li>
+                    <li>
+                      Movies with a sense of humor, fantasy, comedy, animation,
+                      etc
+                    </li>
                   </ul>
                 </div>
               </div>
