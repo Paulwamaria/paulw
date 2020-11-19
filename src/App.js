@@ -1,17 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./App.css";
 import Mynav from "./components/Navbar";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 function App() {
   return (
-
+    <Fragment>
       <div className="App">
-      <Mynav />
-      <Footer />
-      
-    </div>
-
+        <Mynav />
+        <Footer />
+      </div>
+  
+    </Fragment>
   );
 }
 
