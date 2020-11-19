@@ -11,22 +11,38 @@ import nodejs from "../assets/logos/nodejs.png";
 import postgress from "../assets/logos/postgress.png";
 import photoshop from "../assets/logos/photoshop.png";
 import illustrator from "../assets/logos/illustrator.png";
-import aftereffects from "../assets/logos/aftereffects.png";
 import figma from "../assets/logos/figma.png";
 import jq from "../assets/logos/jq.png";
 import boot from "../assets/logos/bootstrap.png";
 import maya from "../assets/logos/maya.png";
-import premiere from "../assets/logos/premierepro.png";
 import git from "../assets/logos/github.png";
 import bit from "../assets/logos/bitbucket.png";
 import vs from "../assets/logos/vscode.png";
 import trello from "../assets/logos/trello.png";
-import audit from "../assets/logos/audition.png";
 
 export class ContactUs extends Component {
   render() {
     return (
       <>
+        <div className="container-fluid text-white">
+          <div className="row">
+            <div className="col-sm-3"></div>
+            <div className="col-sm-6">
+              <h3
+                className="funnyFonts mt-4
+                "
+              >
+                My special skills:
+              </h3>
+              <ul>
+                <li>Team player</li>
+                <li>Ability to learn new skills</li>
+                <li>Problem solver</li>
+              </ul>
+            </div>
+            <div className="col-sm-3"></div>
+          </div>
+        </div>
         <h3 className="funnyFonts text-center text-white mt-3 mb-3">
           What I can work with:
         </h3>
@@ -238,18 +254,7 @@ export class ContactUs extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-2">
-                  <div className="">
-                    <div className=" text-center">Premierepro</div>
-                    <div className="">
-                      <img
-                        className="img-responsive logo"
-                        src={premiere}
-                        alt="premierepro logo"
-                      />
-                    </div>
-                  </div>
-                </div>
+
                 <div className="col-md-2">
                   <div className="">
                     <div className=" text-center">Maya</div>
@@ -258,18 +263,6 @@ export class ContactUs extends Component {
                         className="img-responsive logo"
                         src={maya}
                         alt="maya logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-2">
-                  <div className="">
-                    <div className=" text-center">Figma</div>
-                    <div className="">
-                      <img
-                        className="img-responsive logo"
-                        src={figma}
-                        alt="postgresql logo"
                       />
                     </div>
                   </div>
@@ -288,18 +281,7 @@ export class ContactUs extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-2">
-                  <div className="">
-                    <div className=" text-center">Aftereffects</div>
-                    <div className="">
-                      <img
-                        className="img-responsive logo"
-                        src={aftereffects}
-                        alt="aftereffects logo"
-                      />
-                    </div>
-                  </div>
-                </div>
+
                 <div className="col-md-2">
                   <div className="">
                     <div className=" text-center">Photoshop</div>
@@ -326,32 +308,17 @@ export class ContactUs extends Component {
                 </div>
                 <div className="col-md-2">
                   <div className="">
-                    <div className=" text-center">Audition</div>
+                    <div className=" text-center">Figma</div>
                     <div className="">
                       <img
                         className="img-responsive logo"
-                        src={audit}
-                        alt="audition logo"
+                        src={figma}
+                        alt="postgresql logo"
                       />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="container-fluid text-white">
-            <div className="row">
-              <div className="col-sm-3"></div>
-              <div className="col-sm-6">
-                <h3 className="funnyFonts mt-4
-                ">And here are my special skills</h3>
-                <ul>
-                  <li>Team player</li>
-                  <li>Ability to learn new skills</li>
-                  <li>Problem solver</li>
-                </ul>
-              </div>
-              <div className="col-sm-3"></div>
             </div>
           </div>
         </div>
