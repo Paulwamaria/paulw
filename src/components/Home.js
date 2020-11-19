@@ -18,7 +18,7 @@ export class Home extends Component {
                   alt="avatar"
                 />{" "}
               </div>
-              <h4 className="text-center text-white funnyFonts mb-5">
+              <h4 className="text-center text-white funnyFonts mb-2">
                 Paul Wamaria
               </h4 >
               <h3 className="text-center text-white funnyFonts mb-2">A Passionate Full Stack Developer</h3>

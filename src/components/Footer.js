@@ -1,11 +1,11 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import instagram from "../assets/projects/insta.png"
+import alx from "../assets/projects/alx.png"
 import servertrackerhome from "../assets/projects/servert.png"
 import mygallery from "../assets/projects/mygallery.png"
 import quotes from "../assets/projects/quotes.png"
 import news from "../assets/projects/news.png"
-import whisperbloghomepage from "../assets/projects/whisperb.png"
+import smartfarm from "../assets/projects/smartfarm.png"
 const Footer = () => {
   return (
     <MDBFooter color="blue" className="font-small pt-4 mt-4">
@@ -20,8 +20,8 @@ const Footer = () => {
           </div>
           </MDBCol>
           <MDBCol md="2">
-        <a href="https://instagram-clone01.herokuapp.com/register/">
-        <img className="img-responsive projsmall mt-2" src={instagram} alt='' />
+        <a href="https://alx-accessor.netlify.app">
+        <img className="img-responsive projsmall mt-2" src={alx} alt='' />
         </a>
            </MDBCol>
            <MDBCol md="2">
@@ -37,8 +37,8 @@ const Footer = () => {
          
            </MDBCol>
            <MDBCol md="2">
-             <a href="https://whisperblogo1.herokuapp.com/">
-             <img className="img-responsive projsmall mt-2" src={whisperbloghomepage} alt='' />
+             <a href="https://smartfarm01.netlify.app">
+             <img className="img-responsive projsmall mt-2" src={smartfarm} alt='' />
              </a>
         
            </MDBCol>
