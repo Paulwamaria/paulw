@@ -5,8 +5,8 @@ export class Home extends Component {
   render() {
     return (
       <Fragment>
-        <h3 className="text-center text-white mt-5 funnyFonts px-1">
-          Welcome to Paul Wamaria's Website
+        <h3 className="text-center text-white mt-2 funnyFonts px-1">
+          Welcome to my personal website:
         </h3>
         <div className="container-fluid">
           <div className="row">
@@ -18,9 +18,11 @@ export class Home extends Component {
                   alt="avatar"
                 />{" "}
               </div>
-              <h3 className="text-center text-white funnyFonts mb-5">
-                A Passionate Full Stack Developer
-              </h3>
+              <h4 className="text-center text-white funnyFonts mb-5">
+                Paul Wamaria
+              </h4 >
+              <h3 className="text-center text-white funnyFonts mb-2">A Passionate Full Stack Developer</h3>
+
             </div>
             <div className="col-md-6 #9699bb">
               <div className=" text-white hoverLight overflow-auto mt-3">
