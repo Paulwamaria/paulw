@@ -1,3 +1,375 @@
-export default function Home() {
-  return <div>Portfolio Loading...</div>;
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  Github,
+  Globe,
+  Mail,
+  Phone,
+  ArrowRight,
+  Code2,
+  Database,
+  Server,
+  Laptop2,
+  Boxes,
+  ChevronRight,
+} from "lucide-react";
+
+const featuredProjects = [
+  {
+    title: "Carenne Fashion House",
+    category: "Luxury E-commerce Platform",
+    summary:
+      "A premium commerce platform built around elegant branding, modern storefront UX, admin workflows, and scalable product management.",
+    stack: ["Next.js", "Django", "PostgreSQL", "DRF"],
+    impact:
+      "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
+    live: "#",
+    code: "#",
+  },
+  {
+    title: "Trading Automation System",
+    category: "Fintech / Automation",
+    summary:
+      "An automated trading workflow focused on signal processing, execution logic, logging, and deployment-ready system design.",
+    stack: ["Python", "MT5", "APIs", "Automation"],
+    impact:
+      "Combines market logic, technical execution, and monitoring in a real-world automation workflow.",
+    live: "#",
+    code: "#",
+  },
+  {
+    title: "TULIA",
+    category: "Social Product",
+    summary:
+      "A relationship-focused platform centered on verification, matching, and trust-based user experiences.",
+    stack: ["Glide", "UX Design", "Product Strategy"],
+    impact:
+      "Structured to grow from a simple MVP into a stronger product ecosystem.",
+    live: "#",
+    code: "#",
+  },
+];
+
+const expertise = [
+  {
+    icon: <Code2 className="h-6 w-6" />,
+    title: "Frontend Engineering",
+    text: "Responsive interfaces with React, Next.js, Tailwind CSS, and clear user-first structure.",
+  },
+  {
+    icon: <Server className="h-6 w-6" />,
+    title: "Backend Development",
+    text: "API architecture, authentication, business logic, and scalable server-side workflows with Django and Node.js.",
+  },
+  {
+    icon: <Database className="h-6 w-6" />,
+    title: "Data & Infrastructure",
+    text: "PostgreSQL, Redis, Docker, Linux environments, deployment setup, and debugging across full systems.",
+  },
+  {
+    icon: <Boxes className="h-6 w-6" />,
+    title: "Product Building",
+    text: "From concept to launch: shaping digital products that connect technology, operations, and real-world value.",
+  },
+];
+
+const experience = [
+  {
+    role: "Freelance Full-Stack Developer",
+    period: "2020 — Present",
+    text: "Building and refining web platforms, APIs, and digital systems across commerce, automation, and product-focused work.",
+  },
+  {
+    role: "Assistant Manager, Mawingu Machineries",
+    period: "2022 — 2025",
+    text: "Led operational coordination, logistics, client support, and process improvements — strengthening my systems thinking beyond software alone.",
+  },
+  {
+    role: "Field Coordinator, Papami Electrical Contractors",
+    period: "2016 — 2018",
+    text: "Managed field activities, coordinated teams, and supported delivery of infrastructure work in fast-moving environments.",
+  },
+];
+
+const stack = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "Python",
+  "Django",
+  "Django REST Framework",
+  "Node.js",
+  "PostgreSQL",
+  "Redis",
+  "Docker",
+  "Linux",
+  "Git",
+  "Tailwind CSS",
+];
+
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-neutral-950 text-white">
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.22),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(236,72,153,0.15),transparent_35%)]" />
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:px-12 lg:py-28">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="relative z-10">
+              <div className="mb-5 inline-flex rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-1 text-sm text-fuchsia-200">
+                Full-Stack Developer • Nakuru, Kenya
+              </div>
+
+              <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
+                I build scalable digital systems for commerce, automation, and
+                modern products.
+              </h1>
+
+              <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-300 md:text-lg">
+                I’m Paul Wamaria — a full-stack developer focused on turning
+                ideas into production-ready platforms with strong architecture,
+                polished user experience, and real business value.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center rounded-2xl bg-white px-5 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200"
+                >
+                  View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+
+                <a
+                  href="#contact"
+                  className="inline-flex items-center rounded-2xl border border-white/20 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+                >
+                  Contact Me
+                </a>
+              </div>
+
+              <div className="mt-8 flex flex-wrap items-center gap-5 text-sm text-neutral-300">
+                <span className="inline-flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  paulwamaria@gmail.com
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  +254 768972290
+                </span>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
+                <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-neutral-900">
+                  <Image
+                    src="/profile.png"
+                    alt="Paul Wamaria"
+                    width={700}
+                    height={800}
+                    className="h-[500px] w-full object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12"
+      >
+        <div className="mb-10">
+          <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+            Featured Work
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+            Projects that reflect how I build
+          </h2>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          {featuredProjects.map((project) => (
+            <div
+              key={project.title}
+              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-fuchsia-400/30 hover:bg-white/10"
+            >
+              <p className="text-sm text-fuchsia-300">{project.category}</p>
+              <h3 className="mt-3 text-2xl font-semibold">{project.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-neutral-300">
+                {project.summary}
+              </p>
+              <p className="mt-4 text-sm leading-7 text-neutral-400">
+                {project.impact}
+              </p>
+
+              <div className="mt-5 flex flex-wrap gap-2">
+                {project.stack.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-200"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-6 flex gap-3">
+                <Link
+                  href={project.live}
+                  className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                >
+                  <Globe className="mr-2 h-4 w-4" />
+                  Live
+                </Link>
+                <Link
+                  href={project.code}
+                  className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                >
+                  <Github className="mr-2 h-4 w-4" />
+                  Code
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.03]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+              What I Do
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+              A full-stack skill set grounded in real systems
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {expertise.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-[2rem] border border-white/10 bg-neutral-900/70 p-6"
+              >
+                <div className="mb-4 inline-flex rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/10 p-3 text-fuchsia-200">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-neutral-300">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+              About Me
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+              I don’t just code features. I build usable, scalable products.
+            </h2>
+            <p className="mt-5 text-base leading-8 text-neutral-300">
+              My work combines software engineering, systems thinking, and
+              product execution. I’m most effective where architecture, user
+              experience, and real operational needs meet.
+            </p>
+          </div>
+
+          <div className="grid gap-4">
+            {experience.map((item) => (
+              <div
+                key={item.role}
+                className="rounded-[2rem] border border-white/10 bg-white/5 p-6"
+              >
+                <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                  <h3 className="text-xl font-semibold">{item.role}</h3>
+                  <span className="text-sm text-fuchsia-300">{item.period}</span>
+                </div>
+                <p className="mt-3 text-sm leading-7 text-neutral-300">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.03]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
+          <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+            Tech Stack
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+            Tools I use to ship products
+          </h2>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            {stack.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/10 bg-neutral-900 px-4 py-2 text-sm text-neutral-200"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12"
+      >
+        <div className="rounded-[2rem] border border-fuchsia-400/20 bg-gradient-to-br from-fuchsia-500/10 via-white/5 to-purple-500/10 p-8 md:p-10">
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+                Let’s Work Together
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+                Need a developer who can build with both code and product
+                thinking?
+              </h2>
+              <p className="mt-4 text-base leading-8 text-neutral-300">
+                I’m open to freelance work, collaborations, and full-stack
+                opportunities where thoughtful systems and strong execution
+                matter.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="mailto:paulwamaria@gmail.com"
+                className="inline-flex items-center rounded-2xl bg-white px-5 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200"
+              >
+                Email Me
+              </a>
+              <Link
+                href="https://github.com/Paulwamaria"
+                className="inline-flex items-center rounded-2xl border border-white/15 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+              >
+                GitHub
+              </Link>
+              <a
+                href="/Paul_Wamaria_CV.pdf"
+                download
+                className="inline-flex items-center rounded-2xl border border-white/20 px-5 py-3 text-white hover:bg-white/10"
+              >
+                download My CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
