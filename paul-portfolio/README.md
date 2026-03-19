@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Paul Wamaria Portfolio
 
-## Getting Started
+A modern, premium portfolio website for **Paul Wamaria**, a full-stack developer focused on building scalable digital systems in e-commerce, fintech, and product-driven platforms.
 
-First, run the development server:
+## 🌍 Live Site
+
+👉 https://paulwamaria.netlify.app
+
+## 👨‍💻 About Me
+
+I am a full-stack developer based in Nakuru, Kenya, specializing in building end-to-end applications using modern technologies such as React, Next.js, Django, and PostgreSQL.
+
+I focus on creating **scalable, production-ready systems** that combine clean architecture, strong user experience, and real-world functionality.
+
+---
+
+## 🚀 Featured Projects
+
+### 🛍 Carenne Fashion House
+Luxury e-commerce platform with modern UI, admin workflows, and scalable backend architecture.  
+**Stack:** Next.js, Django, PostgreSQL, DRF  
+
+---
+
+### 📈 Trading Automation System
+Automated trading system integrating signal processing, execution logic, and monitoring.  
+**Stack:** Python, MT5, APIs  
+
+---
+
+### 💬 TULIA
+Relationship-focused platform built around user verification, matching, and trust.  
+**Stack:** Glide, UX Design  
+
+---
+
+## 🧠 Tech Stack
+
+- **Frontend:** React, Next.js, TypeScript, Tailwind CSS  
+- **Backend:** Django, Node.js, REST APIs  
+- **Database:** PostgreSQL, Redis  
+- **DevOps:** Docker, Linux, Git  
+
+---
+
+## 📁 Project Structure
 
 ```bash
+src/
+  app/
+    layout.tsx
+    page.tsx
+    globals.css
+public/
+  favicon.ico
+  profile.png
+
+
+⚙️ Getting Started
+
+Clone the repository:
+
+git clone https://github.com/Paulwamaria/paulw.git
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🎨 Customization
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To personalize:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Update src/app/page.tsx → content & sections
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Update src/app/layout.tsx → metadata
 
-## Learn More
+Replace public/profile.png → your image
 
-To learn more about Next.js, take a look at the following resources:
+Replace public/favicon.ico → your branding
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🚀 Deployment (Netlify)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is deployed using Netlify.
 
-## Deploy on Vercel
+Build Settings:
+Build command: npm run build
+Publish directory: .next
+Recommended Plugin:
+npm install -D @netlify/plugin-nextjs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Create netlify.toml:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+📬 Contact
+
+Email: paulwamaria@gmail.com
+
+Phone: +254 780 404 626
+
+GitHub: https://github.com/Paulwamaria
+
+⚡ Philosophy
+
+I don’t just build features — I build systems that work in the real world.
+
+📄 License
+
+Personal portfolio project.
+
+
+---
+
+# 🚀 NEXT: DEPLOY TO NETLIFY
+
+Since you're switching from Vercel → Netlify, do this clean:
+
+### 1. Push changes
+```bash
+git add .
+git commit -m "Redesign portfolio + updated README"
+git push
+2. Netlify Setup
+
+Go to 👉 https://app.netlify.com
+
+Import your repo: paulw
+
+Set:
+
+Build command: npm run build
+Publish directory: .next
