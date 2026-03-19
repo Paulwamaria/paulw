@@ -14,8 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Paul Wamaria | Full-Stack Developer",
-  description:
-    "Full-stack developer building scalable systems in commerce, automation, and digital products.",
+  description: "Building scalable systems in fintech, e-commerce and automation",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 export default function RootLayout({
   children,
