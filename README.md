@@ -45,7 +45,7 @@ Relationship-focused platform built around user verification, matching, and trus
 
 ## 📁 Project Structure
 
-```bash
+
 src/
   app/
     layout.tsx
@@ -69,6 +69,7 @@ npm install
 Run the development server:
 
 npm run dev
+
 🎨 Customization
 
 To personalize:
@@ -103,7 +104,7 @@ Create netlify.toml:
 
 Email: paulwamaria@gmail.com
 
-Phone: +254 780 404 626
+Phone: +254 768972290
 
 GitHub: https://github.com/Paulwamaria
 
@@ -118,22 +119,3 @@ Personal portfolio project.
 
 ---
 
-# 🚀 NEXT: DEPLOY TO NETLIFY
-
-Since you're switching from Vercel → Netlify, do this clean:
-
-### 1. Push changes
-```bash
-git add .
-git commit -m "Redesign portfolio + updated README"
-git push
-2. Netlify Setup
-
-Go to 👉 https://app.netlify.com
-
-Import your repo: paulw
-
-Set:
-
-Build command: npm run build
-Publish directory: .next
