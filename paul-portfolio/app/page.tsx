@@ -24,7 +24,7 @@ const featuredProjects = [
     stack: ["Next.js", "Django", "PostgreSQL", "DRF"],
     impact:
       "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
-    live: "https://carenne-designs.com",
+    live: "https://carennedesigns.com",
     code: "protected",
   },
   {
