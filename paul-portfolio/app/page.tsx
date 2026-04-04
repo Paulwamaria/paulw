@@ -17,15 +17,15 @@ import {
 
 const featuredProjects = [
   {
-    title: "Carenne Fashion House",
+    title: "Carenne Designs",
     category: "Luxury E-commerce Platform",
     summary:
       "A premium commerce platform built around elegant branding, modern storefront UX, admin workflows, and scalable product management.",
     stack: ["Next.js", "Django", "PostgreSQL", "DRF"],
     impact:
       "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
-    live: "#",
-    code: "#",
+    live: "https://carenne-designs.com",
+    code: "protected",
   },
   {
     title: "Trading Automation System",
