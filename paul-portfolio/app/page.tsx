@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import {
   Github,
   Globe,
@@ -10,14 +9,15 @@ import {
   Code2,
   Database,
   Server,
-  Laptop2,
   Boxes,
-  ChevronRight,
+  BookOpen,
 } from "lucide-react";
 
 const featuredProjects = [
   {
     title: "Carenne Fashion House",
+    slug: "carenne",
+    image: "/projects/carenne.png",
     category: "Luxury E-commerce Platform",
     summary:
       "A premium commerce platform built around elegant branding, modern storefront UX, admin workflows, and scalable product management.",
@@ -25,31 +25,55 @@ const featuredProjects = [
     impact:
       "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
     live: "https://carennedesigns.com",
-    code: "/code-access",
+    code: "/code-access/carenne",
   },
   {
     title: "Trading Automation System",
+    slug: "trading",
+    image: "/projects/trading.png",
     category: "Fintech / Automation",
     summary:
       "An automated trading workflow focused on signal processing, execution logic, logging, and deployment-ready system design.",
     stack: ["Python", "MT5", "APIs", "Automation"],
     impact:
       "Combines market logic, technical execution, and monitoring in a real-world automation workflow.",
-    live: "/code-access",
-    code: "/code-access",
+    live: "/code-access/trading",
+    code: "/code-access/trading",
   },
   {
     title: "Ascend",
+    slug: "ascend",
+    image: "/projects/ascend.png",
     category: "Social Platform / Product",
     summary:
       "A social growth platform combining networking, motivation, and community engagement through circles, challenges, and user-driven interaction.",
     stack: ["React", "Django", "PostgreSQL", "Tailwind CSS"],
     impact:
       "Built to support meaningful digital engagement with product-focused architecture, onboarding flows, and scalable backend systems.",
-    live: "https://nexa-asfrontend.vercel.app/",
-    code: "/code-access",
+    live: "https://nexa-asfrontend.vercel.app/feed",
+    code: "/code-access/ascend",
   },
 ];
+
+const books = [
+  {
+    title: "What Remains After",
+    image: "/books/what-remains.jpg",
+    type: "Kindle Book",
+    description:
+      "A published work that reflects my storytelling, long-form writing ability, and creative discipline.",
+    link: "https://www.amazon.com/dp/B0GWQH1BM5",
+  },
+  {
+    title: "The Curate Ruin",
+    image: "/books/the-curate-ruin.jpg",
+    type: "Kindle Book",
+    description:
+      "A thriller that showcases structure, detail, narrative tension, and strong creative world-building.",
+    link: "https://www.amazon.com/dp/B0GTF3JFC1",
+  },
+];
+
 const expertise = [
   {
     icon: <Code2 className="h-6 w-6" />,
@@ -108,23 +132,6 @@ const stack = [
   "Tailwind CSS",
 ];
 
-const books = [
-  {
-    title: "What Remains",
-    type: "Kindle Book",
-    description:
-      "A published work showcasing my storytelling, creativity, and long-form writing ability.",
-    link: "https://www.amazon.com/dp/B0GWQH1BM5",
-  },
-  {
-    title: "The Art of Ruin",
-    type: "Kindle Book",
-    description:
-      "A thriller that reflects my strength in narrative structure, detail, and creative world-building.",
-    link: "https://www.amazon.com/dp/B0GTF3JFC1",
-  },
-];
-
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
@@ -157,10 +164,11 @@ export default function HomePage() {
                 </a>
 
                 <a
-                  href="#contact"
+                  href="/Paul_Wamaria_CV.pdf"
+                  download
                   className="inline-flex items-center rounded-2xl border border-white/20 px-5 py-3 font-medium text-white transition hover:bg-white/10"
                 >
-                  Contact Me
+                  Download CV
                 </a>
               </div>
 
@@ -171,7 +179,7 @@ export default function HomePage() {
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  +254 768972290
+                  +254 780 404 626
                 </span>
               </div>
             </div>
@@ -210,44 +218,55 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-3">
           {featuredProjects.map((project) => (
             <div
-              key={project.title}
-              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-fuchsia-400/30 hover:bg-white/10"
+              key={project.slug}
+              className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-fuchsia-400/30 hover:bg-white/10"
             >
-              <p className="text-sm text-fuchsia-300">{project.category}</p>
-              <h3 className="mt-3 text-2xl font-semibold">{project.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-neutral-300">
-                {project.summary}
-              </p>
-              <p className="mt-4 text-sm leading-7 text-neutral-400">
-                {project.impact}
-              </p>
-
-              <div className="mt-5 flex flex-wrap gap-2">
-                {project.stack.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-200"
-                  >
-                    {item}
-                  </span>
-                ))}
+              <div className="relative h-52 w-full">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
 
-              <div className="mt-6 flex gap-3">
-                <Link
-                  href={project.live}
-                  className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-                >
-                  <Globe className="mr-2 h-4 w-4" />
-                  Live
-                </Link>
-                <Link
-                  href={project.code}
-                  className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
-                </Link>
+              <div className="p-6">
+                <p className="text-sm text-fuchsia-300">{project.category}</p>
+                <h3 className="mt-3 text-2xl font-semibold">{project.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-neutral-300">
+                  {project.summary}
+                </p>
+                <p className="mt-4 text-sm leading-7 text-neutral-400">
+                  {project.impact}
+                </p>
+
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {project.stack.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="mt-6 flex gap-3">
+                  <Link
+                    href={project.live}
+                    className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                  >
+                    <Globe className="mr-2 h-4 w-4" />
+                    Live
+                  </Link>
+                  <Link
+                    href={project.code}
+                    className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                  >
+                    <Github className="mr-2 h-4 w-4" />
+                    Code
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
@@ -308,9 +327,7 @@ export default function HomePage() {
               >
                 <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                   <h3 className="text-xl font-semibold">{item.role}</h3>
-                  <span className="text-sm text-fuchsia-300">
-                    {item.period}
-                  </span>
+                  <span className="text-sm text-fuchsia-300">{item.period}</span>
                 </div>
                 <p className="mt-3 text-sm leading-7 text-neutral-300">
                   {item.text}
@@ -362,22 +379,36 @@ export default function HomePage() {
           {books.map((book) => (
             <div
               key={book.title}
-              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 transition hover:border-fuchsia-400/30 hover:bg-white/10"
+              className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:border-fuchsia-400/30 hover:bg-white/10"
             >
-              <p className="text-sm text-fuchsia-300">{book.type}</p>
-              <h3 className="mt-3 text-2xl font-semibold">{book.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-neutral-300">
-                {book.description}
-              </p>
+              <div className="relative h-64 w-full">
+                <Image
+                  src={book.image}
+                  alt={book.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
-              <a
-                href={book.link}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-              >
-                View Book <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              <div className="p-6">
+                <div className="mb-4 inline-flex rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/10 p-3 text-fuchsia-200">
+                  <BookOpen className="h-5 w-5" />
+                </div>
+                <p className="text-sm text-fuchsia-300">{book.type}</p>
+                <h3 className="mt-3 text-2xl font-semibold">{book.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-neutral-300">
+                  {book.description}
+                </p>
+
+                <a
+                  href={book.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                >
+                  View Book <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </div>
             </div>
           ))}
         </div>
@@ -413,17 +444,11 @@ export default function HomePage() {
               </a>
               <Link
                 href="https://github.com/Paulwamaria"
+                target="_blank"
                 className="inline-flex items-center rounded-2xl border border-white/15 px-5 py-3 font-medium text-white transition hover:bg-white/10"
               >
                 GitHub
               </Link>
-              <a
-                href="/Paul_Wamaria_CV.pdf"
-                download
-                className="inline-flex items-center rounded-2xl border border-white/20 px-5 py-3 text-white hover:bg-white/10"
-              >
-                download My CV
-              </a>
             </div>
           </div>
         </div>
