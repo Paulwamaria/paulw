@@ -17,15 +17,15 @@ import {
 
 const featuredProjects = [
   {
-    title: "Carenne Designs",
+    title: "Carenne Fashion House",
     category: "Luxury E-commerce Platform",
     summary:
       "A premium commerce platform built around elegant branding, modern storefront UX, admin workflows, and scalable product management.",
     stack: ["Next.js", "Django", "PostgreSQL", "DRF"],
     impact:
       "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
-    live: "https://carennedesigns.com",
-    code: "protected",
+    live: "#",
+    code: "#",
   },
   {
     title: "Trading Automation System",
@@ -39,18 +39,17 @@ const featuredProjects = [
     code: "#",
   },
   {
-    title: "TULIA",
-    category: "Social Product",
+    title: "Ascend",
+    category: "Social Platform / Product",
     summary:
-      "A relationship-focused platform centered on verification, matching, and trust-based user experiences.",
-    stack: ["Glide", "UX Design", "Product Strategy"],
+      "A social growth platform combining networking, motivation, and community engagement through circles, challenges, and user-driven interaction.",
+    stack: ["React", "Django", "PostgreSQL", "Tailwind CSS"],
     impact:
-      "Structured to grow from a simple MVP into a stronger product ecosystem.",
+      "Built to support meaningful digital engagement with product-focused architecture, onboarding flows, and scalable backend systems.",
     live: "#",
     code: "#",
   },
 ];
-
 const expertise = [
   {
     icon: <Code2 className="h-6 w-6" />,
