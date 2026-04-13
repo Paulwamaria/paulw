@@ -24,8 +24,8 @@ const featuredProjects = [
     stack: ["Next.js", "Django", "PostgreSQL", "DRF"],
     impact:
       "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
-    live: "#",
-    code: "#",
+    live: "https://carennedesigns.com",
+    code: "/code-access",
   },
   {
     title: "Trading Automation System",
@@ -35,8 +35,8 @@ const featuredProjects = [
     stack: ["Python", "MT5", "APIs", "Automation"],
     impact:
       "Combines market logic, technical execution, and monitoring in a real-world automation workflow.",
-    live: "#",
-    code: "#",
+    live: "/code-access",
+    code: "/code-access",
   },
   {
     title: "Ascend",
@@ -46,8 +46,8 @@ const featuredProjects = [
     stack: ["React", "Django", "PostgreSQL", "Tailwind CSS"],
     impact:
       "Built to support meaningful digital engagement with product-focused architecture, onboarding flows, and scalable backend systems.",
-    live: "#",
-    code: "#",
+    live: "https://nexa-asfrontend.vercel.app/",
+    code: "/code-access",
   },
 ];
 const expertise = [
@@ -106,6 +106,23 @@ const stack = [
   "Linux",
   "Git",
   "Tailwind CSS",
+];
+
+const books = [
+  {
+    title: "What Remains",
+    type: "Kindle Book",
+    description:
+      "A published work showcasing my storytelling, creativity, and long-form writing ability.",
+    link: "https://www.amazon.com/dp/B0GWQH1BM5",
+  },
+  {
+    title: "The Art of Ruin",
+    type: "Kindle Book",
+    description:
+      "A thriller that reflects my strength in narrative structure, detail, and creative world-building.",
+    link: "https://www.amazon.com/dp/B0GTF3JFC1",
+  },
 ];
 
 export default function HomePage() {
@@ -291,7 +308,9 @@ export default function HomePage() {
               >
                 <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                   <h3 className="text-xl font-semibold">{item.role}</h3>
-                  <span className="text-sm text-fuchsia-300">{item.period}</span>
+                  <span className="text-sm text-fuchsia-300">
+                    {item.period}
+                  </span>
                 </div>
                 <p className="mt-3 text-sm leading-7 text-neutral-300">
                   {item.text}
@@ -321,6 +340,46 @@ export default function HomePage() {
               </span>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
+        <div className="mb-10">
+          <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+            Writing & Published Work
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+            Beyond code, I write and publish
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-300">
+            My writing reflects another side of how I build: structure,
+            imagination, clarity, and attention to detail. These qualities also
+            shape how I design software and digital products.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {books.map((book) => (
+            <div
+              key={book.title}
+              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 transition hover:border-fuchsia-400/30 hover:bg-white/10"
+            >
+              <p className="text-sm text-fuchsia-300">{book.type}</p>
+              <h3 className="mt-3 text-2xl font-semibold">{book.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-neutral-300">
+                {book.description}
+              </p>
+
+              <a
+                href={book.link}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+              >
+                View Book <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
