@@ -66,8 +66,8 @@ const books = [
     link: "https://www.amazon.com/dp/B0GWQH1BM5",
   },
   {
-    title: "The Art of Ruin",
-    image: "/books/art-of-ruin.jpg",
+    title: "The Curated Ruin",
+    image: "/books/the-curated-ruin.jpg",
     type: "Kindle Book",
     description:
       "A thriller that showcases structure, detail, narrative tension, and strong creative world-building.",
