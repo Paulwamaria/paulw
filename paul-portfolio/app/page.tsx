@@ -58,7 +58,7 @@ const featuredProjects = [
 
 const books = [
   {
-    title: "What Remains",
+    title: "What Remains After",
     image: "/books/what-remains.jpg",
     type: "Kindle Book",
     description:
