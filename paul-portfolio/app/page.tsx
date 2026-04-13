@@ -38,7 +38,7 @@ const featuredProjects = [
     stack: ["Python", "MT5", "APIs", "Automation"],
     impact:
       "Combines market logic, technical execution, and monitoring in a real-world automation workflow.",
-    live: "code-access/trading",
+    live: "code-access?project=trading",
     code: "/code-access?project=trading",
   },
   {
