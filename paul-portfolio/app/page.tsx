@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "./components/Navbar";
 import {
   Github,
   Globe,
@@ -25,7 +26,7 @@ const featuredProjects = [
     impact:
       "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
     live: "https://carennedesigns.com",
-    code: "/code-access/carenne",
+    code: "/code-access?project=carenne",
   },
   {
     title: "Trading Automation System",
@@ -37,8 +38,8 @@ const featuredProjects = [
     stack: ["Python", "MT5", "APIs", "Automation"],
     impact:
       "Combines market logic, technical execution, and monitoring in a real-world automation workflow.",
-    live: "/code-access/trading",
-    code: "/code-access/trading",
+    live: "code-access/trading",
+    code: "/code-access?project=trading",
   },
   {
     title: "Ascend",
@@ -50,14 +51,14 @@ const featuredProjects = [
     stack: ["React", "Django", "PostgreSQL", "Tailwind CSS"],
     impact:
       "Built to support meaningful digital engagement with product-focused architecture, onboarding flows, and scalable backend systems.",
-    live: "https://nexa-asfrontend.vercel.app/feed",
-    code: "/code-access/ascend",
+    live: "https://nexa-asfrontend.vercel.app",
+    code: "/code-access?project=ascend",
   },
 ];
 
 const books = [
   {
-    title: "What Remains After",
+    title: "What Remains",
     image: "/books/what-remains.jpg",
     type: "Kindle Book",
     description:
@@ -65,8 +66,8 @@ const books = [
     link: "https://www.amazon.com/dp/B0GWQH1BM5",
   },
   {
-    title: "The Curate Ruin",
-    image: "/books/the-curate-ruin.jpg",
+    title: "The Art of Ruin",
+    image: "/books/art-of-ruin.jpg",
     type: "Kindle Book",
     description:
       "A thriller that showcases structure, detail, narrative tension, and strong creative world-building.",
@@ -134,325 +135,337 @@ const stack = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-neutral-950 text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.22),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(236,72,153,0.15),transparent_35%)]" />
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:px-12 lg:py-28">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="relative z-10">
-              <div className="mb-5 inline-flex rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-1 text-sm text-fuchsia-200">
-                Full-Stack Developer • Nakuru, Kenya
+    <>
+      <Navbar />
+
+      <main className="min-h-screen bg-neutral-950 text-white">
+        <section className="relative overflow-hidden border-b border-white/10">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.22),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(236,72,153,0.15),transparent_35%)]" />
+          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:px-12 lg:py-28">
+            <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+              <div className="relative z-10">
+                <div className="mb-5 inline-flex rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-1 text-sm text-fuchsia-200">
+                  Full-Stack Developer • Nakuru, Kenya
+                </div>
+
+                <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
+                  I build scalable digital systems for commerce, automation, and
+                  modern products.
+                </h1>
+
+                <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-300 md:text-lg">
+                  I’m Paul Wamaria — a full-stack developer focused on turning
+                  ideas into production-ready platforms with strong
+                  architecture, polished user experience, and real business
+                  value.
+                </p>
+
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <a
+                    href="#projects"
+                    className="inline-flex items-center rounded-2xl bg-white px-5 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200"
+                  >
+                    View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+
+                  <a
+                    href="/Paul_Wamaria_CV.pdf"
+                    download
+                    className="inline-flex items-center rounded-2xl border border-white/20 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+                  >
+                    Download CV
+                  </a>
+                </div>
+
+                <div className="mt-8 flex flex-wrap items-center gap-5 text-sm text-neutral-300">
+                  <span className="inline-flex items-center gap-2">
+                    <Mail className="h-4 w-4" />
+                    paulwamaria@gmail.com
+                  </span>
+                  <span className="inline-flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    +254 780 404 626
+                  </span>
+                </div>
               </div>
 
-              <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
-                I build scalable digital systems for commerce, automation, and
-                modern products.
-              </h1>
-
-              <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-300 md:text-lg">
-                I’m Paul Wamaria — a full-stack developer focused on turning
-                ideas into production-ready platforms with strong architecture,
-                polished user experience, and real business value.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="#projects"
-                  className="inline-flex items-center rounded-2xl bg-white px-5 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200"
-                >
-                  View Projects <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-
-                <a
-                  href="/Paul_Wamaria_CV.pdf"
-                  download
-                  className="inline-flex items-center rounded-2xl border border-white/20 px-5 py-3 font-medium text-white transition hover:bg-white/10"
-                >
-                  Download CV
-                </a>
-              </div>
-
-              <div className="mt-8 flex flex-wrap items-center gap-5 text-sm text-neutral-300">
-                <span className="inline-flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  paulwamaria@gmail.com
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  +254 780 404 626
-                </span>
+              <div className="relative">
+                <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
+                  <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-neutral-900">
+                    <Image
+                      src="/profile.png"
+                      alt="Paul Wamaria"
+                      width={700}
+                      height={800}
+                      className="h-[500px] w-full object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="relative">
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-                <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-neutral-900">
+        <section
+          id="projects"
+          className="scroll-mt-24 mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12"
+        >
+          <div className="mb-10">
+            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+              Featured Work
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+              Projects that reflect how I build
+            </h2>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {featuredProjects.map((project) => (
+              <div
+                key={project.slug}
+                className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-fuchsia-400/30 hover:bg-white/10"
+              >
+                <div className="relative h-52 w-full">
                   <Image
-                    src="/profile.png"
-                    alt="Paul Wamaria"
-                    width={700}
-                    height={800}
-                    className="h-[500px] w-full object-cover"
-                    priority
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
                   />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section
-        id="projects"
-        className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12"
-      >
-        <div className="mb-10">
-          <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
-            Featured Work
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-            Projects that reflect how I build
-          </h2>
-        </div>
+                <div className="p-6">
+                  <p className="text-sm text-fuchsia-300">{project.category}</p>
+                  <h3 className="mt-3 text-2xl font-semibold">
+                    {project.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-neutral-300">
+                    {project.summary}
+                  </p>
+                  <p className="mt-4 text-sm leading-7 text-neutral-400">
+                    {project.impact}
+                  </p>
 
-        <div className="grid gap-6 lg:grid-cols-3">
-          {featuredProjects.map((project) => (
-            <div
-              key={project.slug}
-              className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-fuchsia-400/30 hover:bg-white/10"
-            >
-              <div className="relative h-52 w-full">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {project.stack.map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-200"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
 
-              <div className="p-6">
-                <p className="text-sm text-fuchsia-300">{project.category}</p>
-                <h3 className="mt-3 text-2xl font-semibold">{project.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-neutral-300">
-                  {project.summary}
-                </p>
-                <p className="mt-4 text-sm leading-7 text-neutral-400">
-                  {project.impact}
-                </p>
-
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {project.stack.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-full bg-white/10 px-3 py-1 text-sm text-neutral-200"
+                  <div className="mt-6 flex gap-3">
+                    <Link
+                      href={project.live}
+                      className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
                     >
-                      {item}
-                    </span>
-                  ))}
+                      <Globe className="mr-2 h-4 w-4" />
+                      Live
+                    </Link>
+                    <Link
+                      href={project.code}
+                      className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Link>
+                  </div>
                 </div>
-
-                <div className="mt-6 flex gap-3">
-                  <Link
-                    href={project.live}
-                    className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-                  >
-                    <Globe className="mr-2 h-4 w-4" />
-                    Live
-                  </Link>
-                  <Link
-                    href={project.code}
-                    className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-                  >
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-white/[0.03]">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
-              What I Do
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-              A full-stack skill set grounded in real systems
-            </h2>
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {expertise.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-[2rem] border border-white/10 bg-neutral-900/70 p-6"
-              >
-                <div className="mb-4 inline-flex rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/10 p-3 text-fuchsia-200">
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-neutral-300">
-                  {item.text}
-                </p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
-              About Me
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-              I don’t just code features. I build usable, scalable products.
-            </h2>
-            <p className="mt-5 text-base leading-8 text-neutral-300">
-              My work combines software engineering, systems thinking, and
-              product execution. I’m most effective where architecture, user
-              experience, and real operational needs meet.
-            </p>
-          </div>
-
-          <div className="grid gap-4">
-            {experience.map((item) => (
-              <div
-                key={item.role}
-                className="rounded-[2rem] border border-white/10 bg-white/5 p-6"
-              >
-                <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-                  <h3 className="text-xl font-semibold">{item.role}</h3>
-                  <span className="text-sm text-fuchsia-300">{item.period}</span>
-                </div>
-                <p className="mt-3 text-sm leading-7 text-neutral-300">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-white/[0.03]">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
-          <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
-            Tech Stack
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-            Tools I use to ship products
-          </h2>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            {stack.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-neutral-900 px-4 py-2 text-sm text-neutral-200"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
-        <div className="mb-10">
-          <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
-            Writing & Published Work
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-            Beyond code, I write and publish
-          </h2>
-          <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-300">
-            My writing reflects another side of how I build: structure,
-            imagination, clarity, and attention to detail. These qualities also
-            shape how I design software and digital products.
-          </p>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          {books.map((book) => (
-            <div
-              key={book.title}
-              className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:border-fuchsia-400/30 hover:bg-white/10"
-            >
-              <div className="relative h-64 w-full">
-                <Image
-                  src={book.image}
-                  alt={book.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="p-6">
-                <div className="mb-4 inline-flex rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/10 p-3 text-fuchsia-200">
-                  <BookOpen className="h-5 w-5" />
-                </div>
-                <p className="text-sm text-fuchsia-300">{book.type}</p>
-                <h3 className="mt-3 text-2xl font-semibold">{book.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-neutral-300">
-                  {book.description}
-                </p>
-
-                <a
-                  href={book.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-                >
-                  View Book <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="contact"
-        className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12"
-      >
-        <div className="rounded-[2rem] border border-fuchsia-400/20 bg-gradient-to-br from-fuchsia-500/10 via-white/5 to-purple-500/10 p-8 md:p-10">
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            <div className="max-w-2xl">
+        <section className="border-y border-white/10 bg-white/[0.03]">
+          <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
+            <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
-                Let’s Work Together
+                What I Do
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-                Need a developer who can build with both code and product
-                thinking?
+                A full-stack skill set grounded in real systems
               </h2>
-              <p className="mt-4 text-base leading-8 text-neutral-300">
-                I’m open to freelance work, collaborations, and full-stack
-                opportunities where thoughtful systems and strong execution
-                matter.
+            </div>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              {expertise.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[2rem] border border-white/10 bg-neutral-900/70 p-6"
+                >
+                  <div className="mb-4 inline-flex rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/10 p-3 text-fuchsia-200">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-neutral-300">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+                About Me
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+                I don’t just code features. I build usable, scalable products.
+              </h2>
+              <p className="mt-5 text-base leading-8 text-neutral-300">
+                My work combines software engineering, systems thinking, and
+                product execution. I’m most effective where architecture, user
+                experience, and real operational needs meet.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="mailto:paulwamaria@gmail.com"
-                className="inline-flex items-center rounded-2xl bg-white px-5 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200"
-              >
-                Email Me
-              </a>
-              <Link
-                href="https://github.com/Paulwamaria"
-                target="_blank"
-                className="inline-flex items-center rounded-2xl border border-white/15 px-5 py-3 font-medium text-white transition hover:bg-white/10"
-              >
-                GitHub
-              </Link>
+            <div className="grid gap-4">
+              {experience.map((item) => (
+                <div
+                  key={item.role}
+                  className="rounded-[2rem] border border-white/10 bg-white/5 p-6"
+                >
+                  <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                    <h3 className="text-xl font-semibold">{item.role}</h3>
+                    <span className="text-sm text-fuchsia-300">
+                      {item.period}
+                    </span>
+                  </div>
+                  <p className="mt-3 text-sm leading-7 text-neutral-300">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+
+        <section className="border-y border-white/10 bg-white/[0.03]">
+          <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
+            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+              Tech Stack
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+              Tools I use to ship products
+            </h2>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              {stack.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-neutral-900 px-4 py-2 text-sm text-neutral-200"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="writing"
+          className="scroll-mt-24 mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12"
+        >
+          <div className="mb-10">
+            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+              Writing & Published Work
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+              Beyond code, I write and publish
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-300">
+              My writing reflects another side of how I build: structure,
+              imagination, clarity, and attention to detail. These qualities
+              also shape how I design software and digital products.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {books.map((book) => (
+              <div
+                key={book.title}
+                className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition hover:border-fuchsia-400/30 hover:bg-white/10"
+              >
+                <div className="relative h-64 w-full">
+                  <Image
+                    src={book.image}
+                    alt={book.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <div className="mb-4 inline-flex rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/10 p-3 text-fuchsia-200">
+                    <BookOpen className="h-5 w-5" />
+                  </div>
+                  <p className="text-sm text-fuchsia-300">{book.type}</p>
+                  <h3 className="mt-3 text-2xl font-semibold">{book.title}</h3>
+                  <p className="mt-4 text-sm leading-7 text-neutral-300">
+                    {book.description}
+                  </p>
+
+                  <a
+                    href={book.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-6 inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                  >
+                    View Book <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          className="scroll-mt-24 mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12"
+        >
+          <div className="rounded-[2rem] border border-fuchsia-400/20 bg-gradient-to-br from-fuchsia-500/10 via-white/5 to-purple-500/10 p-8 md:p-10">
+            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+              <div className="max-w-2xl">
+                <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+                  Let’s Work Together
+                </p>
+                <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+                  Need a developer who can build with both code and product
+                  thinking?
+                </h2>
+                <p className="mt-4 text-base leading-8 text-neutral-300">
+                  I’m open to freelance work, collaborations, and full-stack
+                  opportunities where thoughtful systems and strong execution
+                  matter.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="mailto:paulwamaria@gmail.com"
+                  className="inline-flex items-center rounded-2xl bg-white px-5 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200"
+                >
+                  Email Me
+                </a>
+                <Link
+                  href="https://github.com/Paulwamaria"
+                  target="_blank"
+                  className="inline-flex items-center rounded-2xl border border-white/15 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+                >
+                  GitHub
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }

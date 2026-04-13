@@ -26,11 +26,12 @@ const projectDetails: Record<
 };
 
 export default async function CodeAccessPage({
-  params,
+  searchParams,
 }: {
-  params: Promise<{ project: string }>;
+  searchParams: Promise<{ project?: string }>;
 }) {
-  const { project } = await params;
+  const params = await searchParams;
+  const project = params.project || "";
   const item = projectDetails[project];
 
   if (!item) {
@@ -44,7 +45,7 @@ export default async function CodeAccessPage({
             </p>
             <Link
               href="/"
-              className="mt-6 inline-flex items-center rounded-2xl border border-white/15 px-5 py-3 text-white hover:bg-white/10"
+              className="mt-6 inline-flex items-center rounded-2xl border border-white/15 px-5 py-3 text-white transition hover:bg-white/10"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Portfolio
