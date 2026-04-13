@@ -9,7 +9,7 @@ const projectDetails: Record<
     title: "Carenne Fashion House",
     description:
       "This repository is private because it contains active product work, business logic, and implementation details that are not currently public.",
-    live: "#",
+    live: "https://carennedesigns.com",
   },
   trading: {
     title: "Trading Automation System",
@@ -21,7 +21,7 @@ const projectDetails: Record<
     title: "Ascend",
     description:
       "This repository is private because the platform is under active development and includes protected product architecture and backend implementation details.",
-    live: "#",
+    live: "https://nexa-asfrontend.vercel.app",
   },
 };
 
