@@ -184,7 +184,7 @@ export default function HomePage() {
                   </span>
                   <span className="inline-flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    +254 780 404 626
+                    +254 768972290
                   </span>
                 </div>
               </div>
