@@ -35,7 +35,7 @@ const featuredProjects = [
     category: "Business Website",
     summary:
       "A modern business website designed for agricultural machinery company, focused on clear service presentation, strong branding, and lead generation.",
-    stack: ["Next.js", "Tailwind CSS"],
+    stack: ["JavaScript", "HTML", "CSS"],
     impact:
       "Improved online presence and credibility with a clean UI, structured content, and optimized user flow for inquiries.",
     live: "https://visoimachineriesnakuru.netlify.app",
