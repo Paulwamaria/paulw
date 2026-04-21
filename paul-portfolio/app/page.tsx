@@ -31,7 +31,7 @@ const featuredProjects = [
     {
     title: "Visoi Machineries",
     slug: "visoima",
-    image: "/projects/visoima.png",
+    image: "/projects/visoima.jpg",
     category: "Business Website",
     summary:
       "A modern business website designed for agricultural machinery company, focused on clear service presentation, strong branding, and lead generation.",
