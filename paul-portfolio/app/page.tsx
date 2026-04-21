@@ -12,6 +12,7 @@ import {
   Server,
   Boxes,
   BookOpen,
+  FileText,
 } from "lucide-react";
 
 const featuredProjects = [
@@ -27,19 +28,21 @@ const featuredProjects = [
       "Designed to support a modern fashion brand with strong product presentation and a scalable backend foundation.",
     live: "https://carennedesigns.com",
     code: "/code-access?project=carenne",
+    caseStudy: "/projects/carenne",
   },
-    {
+  {
     title: "Visoi Machineries",
     slug: "visoima",
     image: "/projects/visoima.jpg",
     category: "Business Website",
     summary:
-      "A modern business website designed for agricultural machinery company, focused on clear service presentation, strong branding, and lead generation.",
+      "A modern business website designed for an agricultural machinery company, focused on clear service presentation, strong branding, and lead generation.",
     stack: ["JavaScript", "HTML", "CSS"],
     impact:
       "Improved online presence and credibility with a clean UI, structured content, and optimized user flow for inquiries.",
     live: "https://visoimachineriesnakuru.netlify.app",
     code: "https://github.com/Paulwamaria/visoi",
+    caseStudy: "/projects/visoima",
   },
   {
     title: "Trading Automation System",
@@ -51,8 +54,9 @@ const featuredProjects = [
     stack: ["Python", "MT5", "APIs", "Automation"],
     impact:
       "Combines market logic, technical execution, and monitoring in a real-world automation workflow.",
-    live: "code-access?project=trading",
+    live: "/code-access?project=trading",
     code: "/code-access?project=trading",
+    caseStudy: "/projects/trading",
   },
   {
     title: "Ascend",
@@ -66,6 +70,7 @@ const featuredProjects = [
       "Built to support meaningful digital engagement with product-focused architecture, onboarding flows, and scalable backend systems.",
     live: "https://nexa-asfrontend.vercel.app",
     code: "/code-access?project=ascend",
+    caseStudy: "/projects/ascend",
   },
 ];
 
@@ -168,9 +173,8 @@ export default function HomePage() {
 
                 <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-300 md:text-lg">
                   I’m Paul Wamaria — a full-stack developer focused on turning
-                  ideas into production-ready platforms with strong
-                  architecture, polished user experience, and real business
-                  value.
+                  ideas into production-ready platforms with strong architecture,
+                  polished user experience, and real business value.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -271,17 +275,28 @@ export default function HomePage() {
                     ))}
                   </div>
 
-                  <div className="mt-6 flex gap-3">
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <Link
+                      href={project.caseStudy}
+                      className="inline-flex items-center rounded-2xl bg-white px-4 py-2 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+                    >
+                      <FileText className="mr-2 h-4 w-4" />
+                      Case Study
+                    </Link>
+
                     <Link
                       href={project.live}
                       className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                      target={project.live.startsWith("http") ? "_blank" : undefined}
                     >
                       <Globe className="mr-2 h-4 w-4" />
                       Live
                     </Link>
+
                     <Link
                       href={project.code}
                       className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+                      target={project.code.startsWith("http") ? "_blank" : undefined}
                     >
                       <Github className="mr-2 h-4 w-4" />
                       Code
