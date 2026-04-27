@@ -12,10 +12,10 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 ### 🔗 Explore More
 
 <details>
-<summary>👉 View Tech Stack</summary>
+<summary>👉 <span style="color:green">View Tech Stack</span></summary>
 
 **Frontend:** Next.js, React, TypeScript, Tailwind  
-**Backend:** Django, DRF, NestJS, Node.js  
+**Backend:** Python, FastAPI, Django, DRF, NestJS, Node.js  
 **Database:** PostgreSQL, Prisma, Redis  
 **Infra:** Docker, Linux, Git  
 **Cloud:** Azure, Netlify, Vercel, Render  
@@ -23,7 +23,7 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 </details>
 
 <details>
-<summary>👉 View Projects</summary>
+<summary><span style="color:green">👉 View Projects</span></summary>
 
 - **Carenne** – E-commerce platform (Next.js, Django)  
 - **Tulia** – Real-time relationship platform (Next.js, NestJS, Socket.IO)  
@@ -34,7 +34,7 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 </details>
 
 <details>
-<summary>👉 View Writing</summary>
+<summary>👉<span style="color:green"> View Writing</span></summary>
 
 - What Remains After  
 - The Curated Ruin  
