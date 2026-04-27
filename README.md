@@ -6,7 +6,8 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 
 🌍 https://paulwamaria.netlify.app  
 📧 paulwamaria@gmail.com 
-🔗 LinkedIn: https://www.linkedin.com/in/paul-wamaria-73b886189/
+🔗 https://www.linkedin.com/in/paul-wamaria-73b886189/
+
 
 ---
 
@@ -26,10 +27,10 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 <details>
 <summary>👉 $\color{green}{\text{View Projects}}$</summary>
 
--[ **Carenne** – E-commerce platform (Next.js, Django)  ](https://carennedesigns.com/)
+- [ **Carenne** – E-commerce platform (Next.js, Django)  ](https://carennedesigns.com/)
 - **Tulia** – Real-time relationship platform (Next.js, NestJS, Socket.IO)  
--[ **Ascend** – Social growth platform (React, Django)  ] (https://nexa-asfrontend.vercel.app/feed)
--[ **Visoi** – Business website (HTML, CSS, JS) ] (https://visoimachineriesnakuru.netlify.app/)  
+- [ **Ascend** – Social growth platform (React, Django)  ] (https://nexa-asfrontend.vercel.app/)
+- [ **Visoi** – Business website (HTML, CSS, JS) ] (https://visoimachineriesnakuru.netlify.app/)  
 - **Trading System** – Automation workflows (Python, MT5)  
 
 </details>
@@ -44,4 +45,4 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 
 ---
 
-> > Design. Develop. Test. Deploy. Automate. I Build Systems, not features.
+> > Design. Develop. Test. Deploy. Automate. I Build Systems, not just features.
