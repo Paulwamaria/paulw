@@ -5,14 +5,15 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 **Stack:** Next.js · React · TypeScript · Django · NestJS · PostgreSQL · Prisma · Docker · Azure  
 
 🌍 https://paulwamaria.netlify.app  
-📧 paulwamaria@gmail.com  
+📧 paulwamaria@gmail.com 
+🔗 LinkedIn: https://www.linkedin.com/in/paul-wamaria-73b886189/
 
 ---
 
 ### 🔗 Explore More
 
 <details>
-<summary>👉 <span style="color:green">View Tech Stack</span></summary>
+<summary>👉 $\color{green}{\text{View Tech Stack}}</summary>
 
 **Frontend:** Next.js, React, TypeScript, Tailwind  
 **Backend:** Python, FastAPI, Django, DRF, NestJS, Node.js  
@@ -25,19 +26,19 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 <details>
 <summary>👉 $\color{green}{\text{View Projects}}$</summary>
 
-- **Carenne** – E-commerce platform (Next.js, Django)  
+-[ **Carenne** – E-commerce platform (Next.js, Django)  ](https://carennedesigns.com/)
 - **Tulia** – Real-time relationship platform (Next.js, NestJS, Socket.IO)  
-- **Ascend** – Social growth platform (React, Django)  
-- **Visoi** – Business website (HTML, CSS, JS)  
+-[ **Ascend** – Social growth platform (React, Django)  ] (https://nexa-asfrontend.vercel.app/feed)
+-[ **Visoi** – Business website (HTML, CSS, JS) ] (https://visoimachineriesnakuru.netlify.app/)  
 - **Trading System** – Automation workflows (Python, MT5)  
 
 </details>
 
 <details>
-<summary>👉<span style="color:green"> View Writing</span></summary>
+<summary>👉 ${\color{green}{\text{View Writing}}</summary>
 
-- What Remains After  
-- The Curated Ruin  
+- [What Remains After ] (https://www.amazon.com/dp/B0GWQH1BM5)
+- [The Curated Ruin]  (https://www.amazon.com/dp/B0GTF3JFC1)
 
 </details>
 
