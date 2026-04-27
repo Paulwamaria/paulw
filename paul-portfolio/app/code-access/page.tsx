@@ -5,6 +5,12 @@ const projectDetails: Record<
   string,
   { title: string; description: string; live?: string }
 > = {
+  tulia: {
+    title: "Tulia",
+    description:
+      "This repository is private as Tulia is an active product concept with user flows, platform logic, and features that are not publicly shared.",
+    live: "#",
+  },
   carenne: {
     title: "Carenne Fashion House",
     description:

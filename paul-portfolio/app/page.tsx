@@ -17,6 +17,27 @@ import {
 
 const featuredProjects = [
   {
+    title: "Tulia",
+    slug: "tulia",
+    image: "/projects/tulia.png",
+    category: "Relationship Platform",
+    summary:
+      "A real-time relationship platform focused on verified users, structured matching, and meaningful interaction, built with a modern full-stack architecture.",
+    stack: [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Socket.IO",
+    ],
+    impact:
+      "Demonstrates full-stack product development with real-time features, authentication flows, and scalable backend architecture.",
+    live: "https://github.com/Paulwamaria/tulia",
+    code: "https://github.com/Paulwamaria/tulia",
+    caseStudy: "/projects/tulia",
+  },
+  {
     title: "Carenne Fashion House",
     slug: "carenne",
     image: "/projects/carenne.png",
@@ -58,6 +79,7 @@ const featuredProjects = [
     code: "/code-access?project=trading",
     caseStudy: "/projects/trading",
   },
+
   {
     title: "Ascend",
     slug: "ascend",
@@ -173,8 +195,9 @@ export default function HomePage() {
 
                 <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-300 md:text-lg">
                   I’m Paul Wamaria — a full-stack developer focused on turning
-                  ideas into production-ready platforms with strong architecture,
-                  polished user experience, and real business value.
+                  ideas into production-ready platforms with strong
+                  architecture, polished user experience, and real business
+                  value.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -287,7 +310,9 @@ export default function HomePage() {
                     <Link
                       href={project.live}
                       className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-                      target={project.live.startsWith("http") ? "_blank" : undefined}
+                      target={
+                        project.live.startsWith("http") ? "_blank" : undefined
+                      }
                     >
                       <Globe className="mr-2 h-4 w-4" />
                       Live
@@ -296,7 +321,9 @@ export default function HomePage() {
                     <Link
                       href={project.code}
                       className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-                      target={project.code.startsWith("http") ? "_blank" : undefined}
+                      target={
+                        project.code.startsWith("http") ? "_blank" : undefined
+                      }
                     >
                       <Github className="mr-2 h-4 w-4" />
                       Code

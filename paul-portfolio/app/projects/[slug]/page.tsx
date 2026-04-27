@@ -20,6 +20,51 @@ const projectData: Record<
     privateCode?: boolean;
   }
 > = {
+  tulia: {
+    title: "Tulia",
+    category: "Relationship Platform",
+    heroImage: "/projects/tulia.png",
+
+    overview:
+      "Tulia is a full-stack relationship platform built to explore how trust, real-time interaction, and structured user flows can improve modern connection experiences. The project combines product thinking with scalable backend architecture and real-time communication.",
+
+    problem:
+      "Many existing platforms prioritize engagement metrics over meaningful interaction, leading to low trust and shallow user experiences. The challenge was to design a system that supports intentional connections while handling real-time interaction and scalable user flows.",
+
+    solution:
+      "I built Tulia as a modern full-stack application using Next.js and NestJS, with a focus on authentication, user verification, matching flows, and real-time communication using WebSockets. The architecture was designed to support both product experimentation and scalability.",
+
+    features: [
+      "User authentication and verification flows",
+      "Matching and connection system",
+      "Real-time messaging with Socket.IO",
+      "Structured backend architecture with NestJS",
+      "Database modeling using Prisma and PostgreSQL",
+    ],
+
+    stack: [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Socket.IO",
+    ],
+
+    challenges: [
+      "Designing real-time communication workflows",
+      "Structuring backend services for scalability",
+      "Managing relational data with Prisma",
+      "Balancing product design with technical implementation",
+    ],
+
+    outcome:
+      "Tulia demonstrates my ability to build a real-time full-stack product from the ground up, combining frontend UX, backend architecture, database design, and live communication systems into a cohesive platform.",
+
+    live: "#",
+    code: "https://github.com/Paulwamaria/tulia",
+    privateCode: true,
+  },
   carenne: {
     title: "Carenne Fashion House",
     category: "Luxury E-commerce Platform",
