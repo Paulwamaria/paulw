@@ -44,4 +44,4 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 
 ---
 
-> I build systems, not just features.
+> > Design. Develop. Test. Deploy. Automate. I Build Systems, not features.
