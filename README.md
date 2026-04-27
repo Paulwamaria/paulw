@@ -1,121 +1,121 @@
-# Paul Wamaria Portfolio
+# Hi, I'm Paul Wamaria
 
-A modern, premium portfolio website for **Paul Wamaria**, a full-stack developer focused on building scalable digital systems in e-commerce, fintech, and product-driven platforms.
+Full-Stack Engineer focused on scalable platforms, APIs, and automation systems.
 
-## 🌍 Live Site
+## What I build
+- Full-stack web applications
+- Backend APIs with Django and DRF
+- Automation systems and trading tools
+- Clean, responsive frontends with Next.js
 
-👉 https://paulwamaria.netlify.app
+## Tech Stack
+- Python
+- Django
+- Django REST Framework
+- Next.js
+- React
+- PostgreSQL# Hi, I'm Paul Wamaria 👋
 
-## 👨‍💻 About Me
+Full-Stack Developer based in Nakuru, Kenya — building scalable web platforms, APIs, real-time apps, and automation systems.
 
-I am a full-stack developer based in Nakuru, Kenya, specializing in building end-to-end applications using modern technologies such as React, Next.js, Django, and PostgreSQL.
+**Core stack:** Next.js · React · TypeScript · Django · NestJS · PostgreSQL · Prisma · Docker · Azure
 
-I focus on creating **scalable, production-ready systems** that combine clean architecture, strong user experience, and real-world functionality.
-
----
-
-## 🚀 Featured Projects
-
-### 🛍 Carenne Fashion House
-Luxury e-commerce platform with modern UI, admin workflows, and scalable backend architecture.  
-**Stack:** Next.js, Django, PostgreSQL, DRF  
-
----
-
-### 📈 Trading Automation System
-Automated trading system integrating signal processing, execution logic, and monitoring.  
-**Stack:** Python, MT5, APIs  
+🌍 Portfolio: https://paulwamaria.netlify.app  
+📧 Email: paulwamaria@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/paul-wamaria-73b886189/
 
 ---
 
-### 💬 TULIA
-Relationship-focused platform built around user verification, matching, and trust.  
-**Stack:** Glide, UX Design  
+## Featured Focus
+
+- Full-stack product development
+- Backend APIs and scalable architecture
+- Real-time apps with Socket.IO
+- Cloud deployment and Azure fundamentals
+- Automation systems and business platforms
+
+<details>
+<summary><strong>Tech Stack</strong></summary>
+
+### Frontend
+Next.js, React, TypeScript, JavaScript, Tailwind CSS, HTML, CSS
+
+### Backend
+Django, Django REST Framework, NestJS, Node.js, REST APIs
+
+### Database & Infrastructure
+PostgreSQL, Prisma, Redis, Docker, Linux, Git/GitHub
+
+### Cloud & Deployment
+Azure, Netlify, Vercel, Render, environment configuration, CI/CD basics
+
+</details>
+
+<details>
+<summary><strong>Featured Projects</strong></summary>
+
+### Carenne Fashion House
+Luxury fashion e-commerce platform with modern storefront design, backend product management, reservations, and scalable architecture.  
+**Stack:** Next.js, Django, DRF, PostgreSQL  
+**Live:** https://carennedesigns.com
+
+### Tulia
+A real-time relationship platform focused on verified users, structured matching, meaningful interactions, and live communication.  
+**Stack:** Next.js, NestJS, TypeScript, Prisma, PostgreSQL, Socket.IO  
+**Repo:** https://github.com/Paulwamaria/tulia
+
+### Ascend
+A social growth platform combining networking, motivation, circles, challenges, onboarding flows, and community engagement.  
+**Stack:** React, Django, PostgreSQL, Tailwind CSS  
+**Live:** https://nexa-asfrontend.vercel.app
+
+### Visoi Machineries
+Business website for an agricultural machinery company focused on service presentation, branding, and lead generation.  
+**Stack:** HTML, CSS, JavaScript  
+**Live:** https://visoimachineriesnakuru.netlify.app  
+**Repo:** https://github.com/Paulwamaria/visoi
+
+### Trading Automation System
+Automated trading workflow focused on signal processing, execution logic, monitoring, logging, and deployment-ready system design.  
+**Stack:** Python, MT5, APIs, Automation
+
+</details>
+
+<details>
+<summary><strong>Published Writing</strong></summary>
+
+I also write and publish fiction, which strengthens how I think about structure, clarity, storytelling, and communication.
+
+- What Remains After
+- The Curated Ruin
+
+</details>
 
 ---
 
-## 🧠 Tech Stack
+## Open To
 
-- **Frontend:** React, Next.js, TypeScript, Tailwind CSS  
-- **Backend:** Django, Node.js, REST APIs  
-- **Database:** PostgreSQL, Redis  
-- **DevOps:** Docker, Linux, Git  
+Remote full-stack roles, backend engineering roles, freelance projects, and product-focused startup opportunities.
 
----
+> I don’t just build features — I build systems that solve real problems.
+- Docker
+- Redis
 
-## 📁 Project Structure
+## Featured Projects
+- **Trading Automation System** – automated signal and execution workflows
+- **Carenne Fashion House** – luxury fashion ecommerce and admin platform
+- **Tulia** – social and relationship platform
+- **Pembe Machinery** – business website with admin tools
 
+## Currently Focused On
+- Production-ready web platforms
+- Automation and intelligent workflows
+- Remote engineering opportunities
 
-src/
-  app/
-    layout.tsx
-    page.tsx
-    globals.css
-public/
-  favicon.ico
-  profile.png
+## Links
+- Portfolio: https://paulwamaria.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/paul-wamaria-73b886189/
+- Email: paulwamaria@gmail.com
 
-
-⚙️ Getting Started
-
-Clone the repository:
-
-git clone https://github.com/Paulwamaria/paulw.git
-
-Install dependencies:
-
-npm install
-
-Run the development server:
-
-npm run dev
-
-🎨 Customization
-
-To personalize:
-
-Update src/app/page.tsx → content & sections
-
-Update src/app/layout.tsx → metadata
-
-Replace public/profile.png → your image
-
-Replace public/favicon.ico → your branding
-
-🚀 Deployment (Netlify)
-
-This project is deployed using Netlify.
-
-Build Settings:
-Build command: npm run build
-Publish directory: .next
-Recommended Plugin:
-npm install -D @netlify/plugin-nextjs
-
-Create netlify.toml:
-
-[build]
-  command = "npm run build"
-  publish = ".next"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-📬 Contact
-
-Email: paulwamaria@gmail.com
-
-Phone: +254 768972290
-
-GitHub: https://github.com/Paulwamaria
-
-⚡ Philosophy
-
-I don’t just build features — I build systems that work in the real world.
-
-📄 License
-
-Personal portfolio project.
-
-
----
-
+## Open to
+Remote full-stack roles, backend engineering roles, and product-focused startup opportunities.
