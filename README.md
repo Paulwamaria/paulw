@@ -1,6 +1,6 @@
 # Hi, I'm Paul 👋
 
-Full-Stack Developer building scalable platforms, APIs, and real-time systems.
+Full-Stack Developer building scalable web platforms, APIs, and real-time systems.
 
 **Stack:** Next.js · React · TypeScript · Django · NestJS · PostgreSQL · Prisma · Docker · Azure  
 
