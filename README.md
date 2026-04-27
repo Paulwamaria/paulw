@@ -13,7 +13,7 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 ### 🔗 Explore More
 
 <details>
-<summary>👉 $\color{green}{\text{View Tech Stack}}</summary>
+<summary>👉 $\color{green}{\text{View Tech Stack}}$</summary>
 
 **Frontend:** Next.js, React, TypeScript, Tailwind  
 **Backend:** Python, FastAPI, Django, DRF, NestJS, Node.js  
@@ -35,7 +35,7 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 </details>
 
 <details>
-<summary>👉 ${\color{green}{\text{View Writing}}</summary>
+<summary>👉 ${\color{green}{\text{View Writing}}$</summary>
 
 - [What Remains After ] (https://www.amazon.com/dp/B0GWQH1BM5)
 - [The Curated Ruin]  (https://www.amazon.com/dp/B0GTF3JFC1)
