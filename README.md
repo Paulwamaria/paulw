@@ -27,10 +27,10 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 <details>
 <summary>👉 $\color{green}{\text{View Projects}}$</summary>
 
-- [ **Carenne** – E-commerce platform (Next.js, Django)  ](https://carennedesigns.com/)
+-  **[Carenne** – E-commerce platform (Next.js, Django)](https://carennedesigns.com/)
 - **Tulia** – Real-time relationship platform (Next.js, NestJS, Socket.IO)  
-- [ **Ascend** – Social growth platform (React, Django)  ] (https://nexa-asfrontend.vercel.app/)
-- [ **Visoi** – Business website (HTML, CSS, JS) ] (https://visoimachineriesnakuru.netlify.app/)  
+- **[Ascend** – Social growth platform (React, Django)](https://nexa-asfrontend.vercel.app/)
+- **[Visoi** – Business website (HTML, CSS, JS)](https://visoimachineriesnakuru.netlify.app/)  
 - **Trading System** – Automation workflows (Python, MT5)  
 
 </details>
@@ -38,8 +38,8 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 <details>
 <summary>👉 $\color{green}{\text{View Writing}}$</summary>
 
-- [What Remains After ] (https://www.amazon.com/dp/B0GWQH1BM5)
-- [The Curated Ruin]  (https://www.amazon.com/dp/B0GTF3JFC1)
+- [What Remains After ](https://www.amazon.com/dp/B0GWQH1BM5)
+- [The Curated Ruin](https://www.amazon.com/dp/B0GTF3JFC1)
 
 </details>
 
