@@ -23,7 +23,7 @@ Full-Stack Developer building scalable platforms, APIs, and real-time systems.
 </details>
 
 <details>
-<summary><span style="color:green">👉 View Projects</span></summary>
+<summary>👉 $\color{green}{\text{View Projects}}$</summary>
 
 - **Carenne** – E-commerce platform (Next.js, Django)  
 - **Tulia** – Real-time relationship platform (Next.js, NestJS, Socket.IO)  
