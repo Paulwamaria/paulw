@@ -1,6 +1,6 @@
-# Hi, How are you today.  I'm Paul👋 , 
+# Hi👋, Gutten Tag! I'm Paul, 
 
-Full-Stack Developer building scalable web platforms, APIs, and real-time systems.
+Full-Stack Engineer building scalable web platforms, APIs, and real-time systems.
 
 **Stack:** Next.js · React · TypeScript · Python . Django · NestJS · PostgreSQL · Prisma · Docker · Azure  
 
@@ -47,4 +47,4 @@ Full-Stack Developer building scalable web platforms, APIs, and real-time system
 
 ---
 
-> >  I Design. Develop. Test. Deploy. Automate. I Build Systems, not just features. > >
+> >  I Design. Develop. Test. Deploy. Automate. I Build Systems, not just features. 
